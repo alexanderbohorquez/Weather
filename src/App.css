@@ -1,0 +1,231 @@
+* {
+  margin: 5px;
+  padding: 5px;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle, #D5F3FF 0%, #51B4E8 100%);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  background-color: transparent;
+  color: #fff;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-input {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+.header-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.icon-button {
+  margin-left: 10px;
+}
+
+.header-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+
+
+.search-input {
+  width: 420px;
+  padding: 10px;
+  border: none;
+  border-radius: 9px;
+  background-color: #D5F3FF;
+  color: #51B4E8;
+  font-size: 18px;
+}
+
+.search-input::placeholder {
+  color: #51B4E8;
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.card {
+  position: relative;
+  width: 600px;
+  height: 380px;
+  border-radius: 25px;
+  background: linear-gradient(180deg, #D5F2FF 0%, #D5F3FF 97.4%);
+  box-shadow: 0px 4.85px 4.85px rgba(0, 0, 0, 0.25);
+  padding: 15px;
+  color: #fff;
+  margin-bottom: 60px;
+  margin-top: 130px;
+}
+
+.content {
+  margin-top: 20px;  
+  height: 200px;
+
+}
+
+h2, p {
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .card {
+    width: 420px;
+    height: 266px;
+  }
+}
+
+
+.weather-icon {
+  position: absolute;
+  top: -70px;
+  right: -70px;
+  width: 300px;
+  height: 300px;
+}
+
+
+@media (max-width: 700px) {
+  .weather-icon{
+    position: absolute;
+  top: -49px;
+  right: -49px;
+  width: 230px;
+  height: 230px;
+  }
+}
+
+.custom-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #38A0D8;
+  color: #fff;
+  border-radius: 4.85px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 4.85px 4.85px rgba(0, 0, 0, 0.25);
+  width: 178px;
+  height: 38px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.custom-button:hover {
+  transform: scale(1.1);
+}
+
+
+.location{
+  position: relative;
+  bottom: 20px;
+  font-size: 45px;
+  color: #026EED;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 700px) {
+  .location{
+    position: relative;
+    bottom: 14px;
+    font-size: 31.5px;
+    color: #026EED;
+    
+  }
+}
+
+.temperature {
+  position: relative;
+  bottom: 40px;
+  font-size: 150px;
+  color: #026EED;
+  font-weight: 200;
+
+}
+
+@media (max-width: 700px) {
+  .temperature {
+    font-size: 105px;
+    bottom: 28px;
+    color: #026EED;
+    font-weight: 200;
+  }
+}
+
+.description{
+  position: relative;
+  font-size: 35px;
+  color: #026EED;
+  right: -55%;
+  bottom: 17px;
+}
+
+@media (max-width: 700px) {
+  .description{
+    position: relative;
+    font-size: 25px;
+    color: #026EED;
+    bottom: 26px;
+  }
+}
+
+.Humidity{
+  position: relative;
+  font-size: 25px;
+  color: #026EED;
+  bottom: 130px;
+}
+
+@media (max-width: 700px) {
+  .Humidity{
+    position: relative;
+    font-size: 17.5px;
+    color: #026EED;
+    bottom: 110px;
+  }
+}
+
+.lonLat{
+  position: relative;
+  font-size: 25px;
+  color: #026EED;
+  bottom: 130px;
+
+}
+
+@media (max-width: 700px) {
+  .lonLat{
+    position: relative;
+    font-size: 17.5px;
+    color: #026EED;
+    bottom: 120px;  
+  }
+}
